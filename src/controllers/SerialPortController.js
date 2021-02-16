@@ -1,4 +1,5 @@
 import serialPortService from '../services/serialPortService'
+import logger from '../shared/logger'
 
 class SerialPortController {
   show (req, res) {
@@ -8,7 +9,10 @@ class SerialPortController {
   }
 
   async getSerialPortData (req, res) {
-    res.json(serialPortService())
+    logger.warn('aquisss')
+    const result = await serialPortService()
+    logger.error(result)
+    res.json(result)
   }
 }
 
