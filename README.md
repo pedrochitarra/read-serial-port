@@ -1,2 +1,2 @@
-# simple-server
+# Simple server
 Simple node express app
