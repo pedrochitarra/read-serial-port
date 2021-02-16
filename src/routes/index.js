@@ -1,8 +1,9 @@
 import { Router } from 'express'
 
-import EstacaoAnteriorController from '../controllers/EstacaoAnteriorController'
+import SerialPortController from '../controllers/SerialPortController'
 
 const routes = Router()
-routes.use('/estacao', EstacaoAnteriorController.show)
-routes.use('/getOrdensEstacaoAnterior', EstacaoAnteriorController.getOrdensProducao)
+routes.use('/', SerialPortController.show)
+routes.use('/getSerialPortData', SerialPortController.getSerialPortData)
+
 export default routes

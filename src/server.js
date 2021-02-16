@@ -1,5 +1,5 @@
 import app from './app'
-import logger from '../../controle/common/logger'
+import logger from './shared/logger'
 
 const server = app.listen(3333, () => {
   logger.info('Listening on port 3333')
